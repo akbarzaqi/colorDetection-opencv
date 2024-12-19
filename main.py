@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 import matplotlib.pyplot as plt
 
-root_path = "1.jpg"
+root_path = "img/1.jpg"
 
 def read_image(image_path):
  bgr_img = cv2.imread(image_path)
