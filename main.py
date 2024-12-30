@@ -65,7 +65,7 @@ while True:
     
     if len(contours) != 0:
         for contour in contours:
-            if cv2.contourArea(contour) > 1000:
+            if cv2.contourArea(contour) > 100:
                 x, y, w, h = cv2.boundingRect(contour)
                 cv2.rectangle(copy_img, (x,y), (x + w, y + h), (0, 255, 0), 2)
                 posisiTeksGawang = (x, y - 10)  
